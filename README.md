@@ -315,61 +315,61 @@ insert into
 values (
         1,
         'Cheese - Parmigiano Reggiano',
-        '$29.40',
+        '29.40',
         'aggregate seamless supply-chains',
         'http://dummyimage.com/193x172.png/cc0000/ffffff'
     ), (
         2,
         'Muffin Mix - Lemon Cranberry',
-        '$53.15',
+        '53.15',
         'morph real-time content',
         'http://dummyimage.com/144x151.png/5fa2dd/ffffff'
     ), (
         3,
         'Eggplant Oriental',
-        '$70.06',
+        '70.06',
         'streamline seamless interfaces',
         'http://dummyimage.com/178x117.png/ff4444/ffffff'
     ), (
         4,
         'Kippers - Smoked',
-        '$49.54',
+        '49.54',
         'architect collaborative metrics',
         'http://dummyimage.com/132x127.png/cc0000/ffffff'
     ), (
         5,
         'Milk - Homo',
-        '$67.78',
+        '67.78',
         'incentivize vertical users',
         'http://dummyimage.com/169x165.png/dddddd/000000'
     ), (
         6,
         'Dried Cherries',
-        '$89.74',
+        '89.74',
         'benchmark compelling models',
         'http://dummyimage.com/124x131.png/cc0000/ffffff'
     ), (
         7,
         'Bread - Pullman, Sliced',
-        '$17.64',
+        '17.64',
         'transition plug-and-play action-items',
         'http://dummyimage.com/213x123.png/5fa2dd/ffffff'
     ), (
         8,
         'Lychee',
-        '$23.15',
+        '23.15',
         'orchestrate cross-platform markets',
         'http://dummyimage.com/118x193.png/dddddd/000000'
     ), (
         9,
         'Beer - Labatt Blue',
-        '$61.92',
+        '61.92',
         'expedite out-of-the-box networks',
         'http://dummyimage.com/247x169.png/dddddd/000000'
     ), (
         10,
         'Daves Island Stinger',
-        '$26.09',
+        '26.09',
         'architect best-of-breed architectures',
         'http://dummyimage.com/105x113.png/cc0000/ffffff'
     );
@@ -1451,6 +1451,65 @@ values (
 ```
 ---
 
+## 4. Queries
+ 1. Todas las facturas del usuario_proveedor_id=4
+```
+SELECT
+    factura_id,
+    usuario_proveedor_id as Proveedores,
+    usuario_cliente_id as Clientes,
+    nombre,
+    CUIT_CUIL,
+    tipo_pago_id,
+    name as Nombre_Producto,
+    precio,
+    cantidad,
+    precio * cantidad as Total
+FROM facturas
+    INNER JOIN usuario on usuario.usuario_id = facturas.usuario_proveedor_id and facturas.usuario_proveedor_id = 4
+    INNER JOIN producto on producto.producto_id = facturas.producto_id
+```
+![](assets/images/Queries1.gif)
+
+---
+ 2. Todas las facturas del usuario_proveedor_id=10 en efectivo
+```
+SELECT
+    factura_id,
+    usuario_proveedor_id as Proveedores,
+    nombre,
+    CUIT_CUIL,
+    descripcion,
+    medio_pago.description,
+    name as Nombre_Producto,
+    precio,
+    cantidad,
+    precio * cantidad as Total
+FROM facturas
+    INNER JOIN usuario on usuario.usuario_id = facturas.usuario_proveedor_id and facturas.usuario_proveedor_id = 10 and tipo_pago_id = 2
+    INNER JOIN producto on producto.producto_id = facturas.producto_id
+    INNER JOIN medio_pago on medio_pago_id = tipo_pago_id
+```
+![](assets/images/Queries2.gif)
+
+---
+
+ 3. Todas usuarios y su direccion
+```
+SELECT
+    nombre,
+    proveedor,
+    CUIT_CUIL,
+    name_calle as Calle,
+    altura,
+    localidad,
+    codigo_postal,
+    provincia
+FROM usuario
+    INNER JOIN direccion ON usuario.direcciones_id = direccion_id
+```
+![](assets/images/Queries3.gif)
+---
 ## Autores
 
 | [<img src="https://avatars.githubusercontent.com/u/54718297?v=4" width=115><br><sub>Roger Bogado Coverzola</sub>](https://github.com/DIOLINK) | [<img src="https://avatars.githubusercontent.com/u/118693919?v=4" width=115><br><sub>Leito Jukic</sub>](https://github.com/Leitojukic) | [<img src="https://avatars.githubusercontent.com/u/54718297?v=4" width=115><br><sub>Sofia Franco</sub>](https://github.com/DIOLINK) |
