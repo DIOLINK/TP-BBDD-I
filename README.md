@@ -1,11 +1,11 @@
 # TP BBDD I
 
-## General
+## General :thinking:
 ```
-            Modelar, llenar y consultar una base de datos del tipo SQL usando las diferentes herramientas, comandos y principalmente conceptos adquiridos en el curso de la materia.
+Modelar, llenar y consultar una base de datos del tipo SQL usando las diferentes herramientas, comandos y principalmente conceptos adquiridos en el curso de la materia.
 ```
 ---
-## Puntos necesarios
+## Puntos necesarios :monocle_face:
 ```
 1. Diagrama de entidad relación DER de la base de datos mostrando la información básica como son: entidades y sus atributos (indicando tipo e información especial como Pk o Fk) y líneas de uniones con los símbolos correspondientes. Dicho diagrama debe tener un mínimo de 8 entidades y variedad de cardinalidades (uno a muchos, muchos a muchos y en lo posible alguna relación uno a uno).
 
@@ -25,7 +25,7 @@
 # E-COMMERCE 
 
 ## 1. Diagrama de entidad relación.
-
+![DER](assets/images/diagramaDER.png)
 ---
 ## 2. Los comandos necesarios para la creación de las tablas.
 
@@ -40,6 +40,9 @@ CREATE TABLE
         proveedor BOOLEAN
     );
 ```
+![](assets/images/usuario.png)
+
+---
 - DIRECCIÓN
 ```
 CREATE TABLE
@@ -52,6 +55,9 @@ CREATE TABLE
         codigo_postal VARCHAR (8)
     );
 ```
+![](assets/images/direccion.png)
+
+---
 - SUCURSAL
 ```
 CREATE TABLE
@@ -64,6 +70,9 @@ CREATE TABLE
         direcciones_id INTEGER NOT NULL REFERENCES direccion (direccion_id)
     );
 ```
+![](assets/images/sucursal.png)
+
+---
 - PRODUCTO
 ```
 CREATE TABLE
@@ -75,6 +84,8 @@ CREATE TABLE
         precio FLOAT
     );
 ```
+![](assets/images/producto.png)
+---
 - MEDIO DE PAGO
 ```
 CREATE TABLE
@@ -84,6 +95,9 @@ CREATE TABLE
         description VARCHAR (256)
     );
 ```
+![](assets/images/medioPago.png)
+
+---
 - FACTURAS
 ```
 CREATE TABLE
@@ -99,6 +113,9 @@ CREATE TABLE
         condicion_IVA CHAR
     );
 ```
+![](assets/images/facturas.png)
+
+---
 - AYUDA
 ```
 CREATE TABLE
@@ -110,5 +127,6 @@ CREATE TABLE
         tipo VARCHAR (40)
     );
 ```
+![](assets/images/ayuda.png)
 
 ---
