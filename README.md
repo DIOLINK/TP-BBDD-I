@@ -13,7 +13,7 @@ Modelar, llenar y consultar una base de datos del tipo SQL usando las diferentes
 
 3. Llenar las tablas con datos, coherentes y relevantes para el negocio.
 
-4.Realizar y mostrar tres consultas complejas usando joins anidados y sus resultados, los cuales deben ser reveladores para el proposito de la base de datos.
+4. Realizar y mostrar tres consultas complejas usando joins anidados y sus resultados, los cuales deben ser reveladores para el proposito de la base de datos.
 ```
 ---
 ## Herramientas utilizadas:
