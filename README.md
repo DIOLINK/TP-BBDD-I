@@ -1,12 +1,12 @@
 # TP BBDD I
 
 ## General :thinking:
-```
+
 Modelar, llenar y consultar una base de datos del tipo SQL usando las diferentes herramientas, comandos y principalmente conceptos adquiridos en el curso de la materia.
-```
+
 ---
 ## Puntos necesarios :monocle_face:
-```
+
 1. Diagrama de entidad relación DER de la base de datos mostrando la información básica como son: entidades y sus atributos (indicando tipo e información especial como Pk o Fk) y líneas de uniones con los símbolos correspondientes. Dicho diagrama debe tener un mínimo de 8 entidades y variedad de cardinalidades (uno a muchos, muchos a muchos y en lo posible alguna relación uno a uno).
 
 2. Mostrar todos los comandos necesarios para la creación de las tablas del punto anterior.
@@ -14,7 +14,7 @@ Modelar, llenar y consultar una base de datos del tipo SQL usando las diferentes
 3. Llenar las tablas con datos, coherentes y relevantes para el negocio.
 
 4. Realizar y mostrar tres consultas complejas usando joins anidados y sus resultados, los cuales deben ser reveladores para el proposito de la base de datos.
-```
+
 ---
 ## Herramientas utilizadas:
   - [SQLite](https://www.sqlite.org/index.html)
