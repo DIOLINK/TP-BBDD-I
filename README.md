@@ -1512,5 +1512,5 @@ FROM usuario
 ---
 ## Autores
 
-| [<img src="https://avatars.githubusercontent.com/u/54718297?v=4" width=115><br><sub>Roger Bogado Coverzola</sub>](https://github.com/DIOLINK) | [<img src="https://avatars.githubusercontent.com/u/118693919?v=4" width=115><br><sub>Leito Jukic</sub>](https://github.com/Leitojukic) | [<img src="https://avatars.githubusercontent.com/u/54718297?v=4" width=115><br><sub>Sofia Franco</sub>](https://github.com/DIOLINK) |
+| [<img src="https://avatars.githubusercontent.com/u/54718297?v=4" width=115><br><sub>Roger Bogado Coverzola</sub>](https://github.com/DIOLINK) | [<img src="https://avatars.githubusercontent.com/u/118693919?v=4" width=115><br><sub>Leito Jukic</sub>](https://github.com/Leitojukic) | [<img src="https://avatars.githubusercontent.com/u/118760681?v=4" width=115><br><sub>Sofia Franco</sub>](https://github.com/sofiariadna) |
 | :---: | :---: | :---: |
